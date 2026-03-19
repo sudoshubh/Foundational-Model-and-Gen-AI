@@ -27,8 +27,6 @@
 ### 🎥 Recording
 - [Watch Recording](https://drive.google.com/file/d/1y8qCZgRtwUkV_agbXYVJdVOvE7EZD9oD/view?usp=sharing)
 
-### 🖼️ Lecture Slides
-- *(Attached)*
 
 ### 💻 Code
 - [Google Colab — Generative Models](https://colab.research.google.com/github/deep-learning-indaba/indaba-pracs-2019/blob/master/3b_generative_models.ipynb#scrollTo=qdSpbaZjeIBD)
@@ -60,6 +58,10 @@
 
 ### 💻 Code / Reading
 - [U-Net Transformer — GitHub](https://github.com/HXLH50K/U-Net-Transformer)
+- [U-Net Transformer: Self and Cross Attention for Medical Image Segmentation](https://arxiv.org/pdf/arXiv:2103.06104v2)
+- [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/pdf/arXiv:1505.04597v1)
+- [High-Resolution Image Synthesis with Latent Diffusion Models](https://arxiv.org/pdf/arXiv:2112.10752v2)
+- [Tutorial on Diffusion Models for Imaging and Vision](https://arxiv.org/pdf/arXiv:2403.18103v3)
 
 ---
 
@@ -136,7 +138,7 @@
 
 ### Material
 - [LORA: LOW-RANK ADAPTATION OF LARGE LANGUAGE MODELS](https://arxiv.org/pdf/2106.09685)
-- [QLORA:Efficient Finetuning of Quantized LLMs][https://arxiv.org/pdf/2305.14314]
+- [QLORA:Efficient Finetuning of Quantized LLMs](https://arxiv.org/pdf/2305.14314)
 
 ## Lecture 13
 
