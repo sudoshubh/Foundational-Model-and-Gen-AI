@@ -34,8 +34,8 @@
 - [Google Colab — Generative Models](https://colab.research.google.com/github/deep-learning-indaba/indaba-pracs-2019/blob/master/3b_generative_models.ipynb#scrollTo=qdSpbaZjeIBD)
 
 ### 📖 Reading
-- [arXiv: 2201.03898](https://arxiv.org/pdf/2201.03898)
-- [arXiv: 1906.02691](https://arxiv.org/pdf/1906.02691)
+- [An Introduction to Autoencoders](https://arxiv.org/pdf/2201.03898)
+- [An Introduction to Variational Autoencoders](https://arxiv.org/pdf/1906.02691)
 
 ---
 
@@ -45,7 +45,7 @@
 - [Watch Recording](https://drive.google.com/file/d/1mzQbgFakSZwGti42xH-XgWnh6B2x3cVh/view?usp=sharing)
 
 ### 📖 Reading
-- [arXiv: 1706.03762 — Attention Is All You Need](https://arxiv.org/pdf/1706.03762)
+- [Attention Is All You Need](https://arxiv.org/pdf/1706.03762)
 
 ### 🔬 Application of Transformer
 - [Transformer-based Optical Attenuation Compensation in Photoacoustic Imaging — SPIE](https://www.spiedigitallibrary.org/journals/journal-of-biomedical-optics/volume-30/issue-11/116004/Transformer-based-optical-attenuation-compensation-and-denoising-in-photoacoustic-imaging/10.1117/1.JBO.30.11.116004.full)
@@ -80,9 +80,9 @@
 - [Watch Recording](https://drive.google.com/file/d/1rDJkNgGgrk25pGmEkKCNIAPjgTqYYcSm/view?usp=sharing)
 
 ### 🔗 Links
-- [arXiv: 1810.04805 — BERT](https://arxiv.org/pdf/1810.04805)
-- [arXiv: 2412.03625v1](https://arxiv.org/pdf/2412.03625v1)
-- [arXiv: 1603.08029](https://arxiv.org/pdf/1603.08029)
+- [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/pdf/1810.04805)
+- [Multimodal Sentiment Analysis Based on BERT and ResNet](https://arxiv.org/pdf/2412.03625v1)
+- [RESNET IN RESNET: GENERALIZING RESIDUAL ARCHITECTURES](https://arxiv.org/pdf/1603.08029)
 - [PLOS ONE Article](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0324621)
 
 ---
@@ -94,7 +94,7 @@
 
 ### 📝 Notes
 - [IBM Think — State Space Models](https://www.ibm.com/think/topics/state-space-model)
-- [arXiv: 2312.00752](https://arxiv.org/pdf/2312.00752)
+- [Mamba: Linear-Time Sequence Modeling with Selective State Spaces](https://arxiv.org/pdf/2312.00752)
 
 ---
 
@@ -107,7 +107,7 @@
 - *(Attached)*
 
 ### 📖 Material
-- [arXiv: 2002.05709](https://arxiv.org/pdf/2002.05709)
+- [ASimple Framework for Contrastive Learning of Visual Representations](https://arxiv.org/pdf/2002.05709)
 - [ScienceDirect Article](https://www.sciencedirect.com/science/article/pii/S0925231224014164#b5)
 - [Built In — Contrastive Learning](https://builtin.com/machine-learning/contrastive-learning)
 
@@ -124,11 +124,8 @@
 ### 🎥 Recording
 - [Watch Recording](https://drive.google.com/file/d/17rmlHnHEjCcJuBfoQbreB3RIM9fDmObC/view?usp=sharing)
 
-### 📝 Notes
-- *(Attached)*
-
 ### 📖 Material
-- [arXiv: 1902.00751](https://arxiv.org/abs/1902.00751)
+- [Parameter-Efficient Transfer Learning for NLP](https://arxiv.org/abs/1902.00751)
 
 ---
 ## Lecture 12
@@ -138,7 +135,8 @@
 - [Watch Recording](https://drive.google.com/file/d/1QIWO-0n_o7jbzpX4TLaLSYRxF_2QJ9Dc/view?usp=sharing)
 
 ### Material
-[https://arxiv.org/pdf/2106.09685),(https://arxiv.org/pdf/2305.14314]
+- [LORA: LOW-RANK ADAPTATION OF LARGE LANGUAGE MODELS](https://arxiv.org/pdf/2106.09685)
+- [QLORA:Efficient Finetuning of Quantized LLMs][https://arxiv.org/pdf/2305.14314]
 
 ## Lecture 13
 
@@ -147,8 +145,4 @@
 - [Watch Recording](https://drive.google.com/file/d/1_Vj5mVEB4JeKVyw7ws_C1XLPCNqmhxrA/view?usp=sharing)
 
 ### Material
-[https://proceedings.neurips.cc/paper/2020/file/6b493230205f780e1bc26945df7481e5-Paper.pdf]
-
-*Last updated: March 2026*
-
-*Last updated: March 2026*
+ - [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://proceedings.neurips.cc/paper/2020/file/6b493230205f780e1bc26945df7481e5-Paper.pdf)
