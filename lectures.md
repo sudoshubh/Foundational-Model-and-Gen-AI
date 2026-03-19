@@ -131,5 +131,24 @@
 - [arXiv: 1902.00751](https://arxiv.org/abs/1902.00751)
 
 ---
+## Lecture 12
+
+### Recording 
+
+- [Watch Recording](https://drive.google.com/file/d/1QIWO-0n_o7jbzpX4TLaLSYRxF_2QJ9Dc/view?usp=sharing)
+
+### Material
+[https://arxiv.org/pdf/2106.09685),(https://arxiv.org/pdf/2305.14314]
+
+## Lecture 13
+
+### Recording 
+
+- [Watch Recording](https://drive.google.com/file/d/1_Vj5mVEB4JeKVyw7ws_C1XLPCNqmhxrA/view?usp=sharing)
+
+### Material
+[https://proceedings.neurips.cc/paper/2020/file/6b493230205f780e1bc26945df7481e5-Paper.pdf]
+
+*Last updated: March 2026*
 
 *Last updated: March 2026*
