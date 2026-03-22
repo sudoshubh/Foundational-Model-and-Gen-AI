@@ -148,3 +148,36 @@
 
 ### Material
  - [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://proceedings.neurips.cc/paper/2020/file/6b493230205f780e1bc26945df7481e5-Paper.pdf)
+
+## Lecture 14
+
+### Recording 
+
+- [Watch Recording](https://drive.google.com/file/d/1J-eOkKS5zs8Seottw1Ep1agAD2awrTlL/view?usp=sharing)
+
+### Material
+ - [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/pdf/2205.14135)
+
+ - [FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning](https://arxiv.org/pdf/2307.08691)
+
+ - [ELI5: FlashAttention](https://gordicaleksa.medium.com/eli5-flash-attention-5c44017022ad)
+
+ - [Understanding Flash Attention: Writing the Algorithm from Scratch in Triton](https://towardsdatascience.com/understanding-flash-attention-writing-the-algorithm-from-scratch-in-triton-5609f0b143ea/)
+
+### Material
+ - [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://proceedings.neurips.cc/paper/2020/file/6b493230205f780e1bc26945df7481e5-Paper.pdf)
+
+
+## Lecture 15
+
+### Recording 
+
+- [Watch Recording](https://drive.google.com/file/d/1uKMOiMwrlAVijVTzgAgM8LBPF5invDhb/view?usp=sharing)
+
+### Material
+
+- [A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT](https://omekas-test.sba.unipi.it/files/original/9473424cea8d562f876a4bca4bedd9e2336910af.pdf)
+
+- [Prompt Engineering as an Important Emerging Skill for Medical Professionals: Tutorial](https://www.jmir.org/2023/1/e50638/)
+
+ -[Prompt Engineering with ChatGPT: A Guide for Academic Writers](https://link.springer.com/article/10.1007/s10439-023-03272-4)
