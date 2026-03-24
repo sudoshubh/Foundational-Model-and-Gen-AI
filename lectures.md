@@ -171,7 +171,6 @@
 ## Lecture 15
 
 ### Recording 
-
 - [Watch Recording](https://drive.google.com/file/d/1uKMOiMwrlAVijVTzgAgM8LBPF5invDhb/view?usp=sharing)
 
 ### Material
@@ -180,4 +179,4 @@
 
 - [Prompt Engineering as an Important Emerging Skill for Medical Professionals: Tutorial](https://www.jmir.org/2023/1/e50638/)
 
- - [Prompt Engineering with ChatGPT: A Guide for Academic Writers](https://link.springer.com/article/10.1007/s10439-023-03272-4)
+- [Prompt Engineering with ChatGPT: A Guide for Academic Writers](https://link.springer.com/article/10.1007/s10439-023-03272-4)
