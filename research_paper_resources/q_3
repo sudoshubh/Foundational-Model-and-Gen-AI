@@ -1,0 +1,111 @@
+Question 1: FlashAttention and Hardware Memory Bottlenecks Based on the architectural improvements introduced by FlashAttention for processing large sequence lengths, which of the following statements are true regarding memory management and computational complexity? Select all that apply. 
+
+A) Standard attention mechanisms materialise the N×N intermediate attention matrix directly in High Bandwidth Memory (HBM), which acts as a primary bottleneck for scaling. 
+B) FlashAttention reduces the memory complexity of the attention mechanism from O(N^2) to O(N). 
+C) FlashAttention operates by completely bypassing SRAM and performing all block-wise computations directly inside HBM to prevent I/O bottlenecks. 
+D) To achieve exact attention without saving the full attention matrix for the backward pass, FlashAttention saves the softmax denominator during the forward pass and recomputes the attention matrix on the fly.
+
+
+Question 2: Memory-Efficient Exact Attention Mechanisms Regarding the architectural bottlenecks of Transformer models and the solutions proposed by the FlashAttention framework, which of the following statements are true? Select all that apply. 
+
+A) Standard attention implementations materialize the intermediate attention matrix S=QK^T directly to High Bandwidth Memory (HBM), incurring an O(N^2) memory footprint. 
+B) FlashAttention trades off mathematical exactness for computational efficiency by utilizing a block-sparse attention mask to approximate the Softmax operation. 
+C) FlashAttention avoids reading and writing the large intermediate attention matrix during the backward pass by storing the softmax normalization factor from the forward pass to quickly recompute attention on-chip. 
+D) FlashAttention-2 introduces a novel localized temporal convolution layer to drastically increase the context length for audio and video processing.
+
+
+Question 3: Latent Diffusion Models (LDMs) for Image Synthesis High-Resolution Image Synthesis relies heavily on the separation of semantic generation from perceptual compression. Which of the following statements accurately reflect the mechanisms behind Latent Diffusion Models (LDMs)? Select all that apply.
+
+A) LDMs learn a joint distribution over discretized image and text representations simultaneously within a single-stage autoregressive transformer. 
+B) LDMs perform the diffusion process in a lower-dimensional latent space obtained via an autoencoder, effectively eliminating semantically meaningless, high-frequency details. 
+C) In LDMs, textual or semantic conditioning is integrated into the UNet backbone via a cross-attention mechanism. 
+D) Prior two-stage image synthesis approaches that jointly learned a score-based prior alongside an encoder/decoder required a difficult weighting between reconstruction and generative capabilities, a flaw LDMs circumvent.
+
+
+Question 4: Parameter-Efficient Fine-Tuning (LoRA and QLoRA) When adapting extremely large pre-trained language models like GPT-3 (175B parameters) or LLaMA, researchers employ Low-Rank Adaptation (LoRA) and its quantized variant (QLoRA). Which of the following statements are correct? Select all that apply. 
+
+A) LoRA inherently introduces additional inference latency during deployment because the low-rank matrices must be sequentially computed as external modules after the main feed-forward networks. 
+B) When applying LoRA to GPT-3 175B, adapting only the query (Wq) and value (Wv) projection matrices with an intrinsic rank as small as r=1 can yield performance competitive with full fine-tuning. 
+C) In QLoRA, the memory footprint required to store the actual LoRA parameters is significantly smaller than the memory consumed by the activation gradients during training. 
+D) QLoRA employs Paged Optimizers to prevent memory spikes that occur during gradient checkpointing when processing mini-batches with excessively long sequence lengths.
+
+
+Question 5: RAG combines pre-trained parametric memory with non-parametric dense vector indices. Which of the following correctly describes the RAG formulations and decoding strategies? Select all that apply.
+
+A) The RAG-Token model marginalizes over latent documents by assuming the exact same retrieved document must be used to generate the entire target sequence. 
+B) The RAG retriever relies on Dense Passage Retrieval (DPR), which formulates the probability of a document given a query as proportional to the exponential of the inner product of their dense representations. 
+C) During the end-to-end fine-tuning of RAG, both the query encoder and the document index encoder are continuously updated to dynamically reshape the non-parametric memory. 
+D) "Fast Decoding" in RAG-Sequence avoids extra forward passes by approximating p(y|x,zi)=0 for any sequence y that was not generated during beam search for the specific document zi.
+
+
+Question 6: In the context of parameter-efficient transfer learning, how do adapter modules differ from the traditional 'fine-tuning top layers' approach when adapting BERT to new tasks?
+
+A. Adapters require retraining the entire Transformer backbone with a lower learning rate.
+B. Fine-tuning top layers is more parameter-efficient because it uses zero additional parameters.
+C. Adapters act as a non-linear gate that discards information from the self-attention layer.
+D. Adapters keep the original network weights fixed while adding a small number of new parameters per task.
+
+
+Question 7: Principles of Contrastive Visual Representation Learning (SimCLR) The SimCLR framework simplifies contrastive learning for visual representations. Which of the following are foundational components of its methodology? Select all that apply.
+
+A) SimCLR applies data augmentation symmetrically to both branches of the framework to generate positive pairs, contrasting with methods that maximize similarity between augmented and unaugmented copies. 
+B) The framework calculates similarity using the NT-Xent loss function, which utilizes unnormalized logits without a temperature scaling parameter. 
+C) SimCLR explicitly requires a memory bank to provide a large dictionary of negative examples for its contrastive loss calculation. 
+D) To prevent training instability when scaling up to extremely large batch sizes (e.g., 8192), SimCLR employs the LARS optimizer.
+
+
+Question 8: Structured State Space Models (SSMs) and Linear Time Invariance In the context of scaling sequence models and integrating state-space models (SSMs) into foundation architectures, which of the following statements correctly describe the differences between Linear Time Invariant (LTI) models and Selective SSMs (like Mamba)? Select all that apply.
+
+A) Standard LTI SSMs (such as S4 and LRU) rely on time-invariant dynamics, allowing them to be efficiently computed using convolutional representations during training. 
+B) The Mamba architecture overcomes the limitations of LTI models by making the parameters Δ, B, and C time-varying, parameterizing them as linear projections of the input sequence. 
+C) To efficiently train Selective SSMs without running out of memory during backpropagation, Mamba utilizes an explicit memory bank to cache previous sequence elements. 
+D) The Real-Gated Linear Recurrent Unit (RG-LRU) discretizes its dynamics using the exact same bilinear continuous-to-discrete transformation formulation as the original S4 model.
+
+
+Question 9: Parameter-Efficient Fine-Tuning (PEFT) and LoRA Mechanics When adapting large foundation models (like a 175 Billion parameter GPT-3), Low-Rank Adaptation (LoRA) is utilized. Which of the following statements accurately describe its mathematical and operational framework? Select all that apply.
+
+A) The effectiveness of parameter-efficient fine-tuning is theoretically supported by the finding that pre-trained language models possess a low intrinsic dimensionality. 
+B) In LoRA, the pre-trained weight matrix W0 in R(d×k) is updated via a low-rank decomposition DeltaW=BA, where B in R(d×r) and A in R(r×k), and the rank r is significantly smaller than both d and k (r << min(d,k)). 
+C) During the initialization of LoRA, both the A and B low-rank matrices are initialized using random Gaussian distributions. 
+D) Adapters are modular components attached strictly outside the transformer network to ensure the feed-forward neural networks remain un-perturbed.
+
+
+Question 10: Quantized LoRA (QLoRA) and Numerical Precision To further reduce memory footprints during the fine-tuning of Large Language Models, QLoRA introduces severe quantization. Based on the notes, which of the following are correct regarding this process? Select all that apply.
+A) Quantization discretizes an input from a higher-level representation (like 32-bit floating point) to a lower-level representation (like 8-bit integer). 
+B) The mathematical quantization formulation maps the 32-bit floating point number strictly to an Int 8 tensor within the absolute range of [-127, 127]. 
+C) QLoRA utilizes "Block-wise quantization," where a tensor X in R(b×h) is divided into n blocks of size B to prevent outliers from skewing the entire quantization range. 
+D) For a 7B parameter LLaMA model, utilizing QLoRA reduces the memory footprint of the weights so drastically that the gradients (e.g., 567 MB) end up consuming significantly more memory than the original model weights themselves.
+
+
+Question 11: Contrastive Learning and SimCLR Framework The SimCLR framework relies on contrasting positive and negative pairs to extract visual representations. Which of the following mathematically and architecturally define this framework? Select all that apply.
+
+A) The framework utilizes data augmentations such as random crops followed by resizing, color distortions, and Gaussian blur to create positive pairs from the same image. 
+B) The objective function used is the NT-Xent loss, which stands for Normalized Temperature-scaled Cross Entropy loss. 
+C) The projection head g(·) maps the representation h_i to a latent space z_i using a non-linear transformation defined strictly as z_i=g(h_i)=W(2)σ(W(1)h_i), where σ represents the ReLU activation function. 
+D) The NT-Xent loss function utilizes an indicator function 1[k≠i]∈{0,1} specifically to evaluate the similarity between augmented views of two different source images.
+
+
+Question 12: Retrieval-Augmented Generation (RAG) Topologies In the context of scaling LLMs with external knowledge bases (RAG), different querying topologies and evaluation metrics are used. Which of the following are accurate? Select all that apply. 
+
+A) Dense Retrieval (DR) heavily relies on text-embedding similarity to retrieve results, returning a small subset of relevant documents (e.g., Doc 20, Doc 60, Doc 40). 
+B) A Reranker is subsequently applied to the initial dense retrieval results to re-order the relevant documents before passing them to the generator. 
+C) "Multi-hop RAG" refers to the process of rewriting a single query into multiple parallel sub-queries (e.g., "compare performance of X in 2025 vs 2026") to retrieve a wider breadth of context. 
+D) According to the 2023 RAG evaluation framework, "Faithfulness" measures whether the answer is logically consistent, while "Perceived Utility" measures whether the answer is helpful and informative.
+
+
+Question 13: Pre-training, Fine-Tuning, and Instruction Adaptation Regarding the lifecycle of a foundation LLM from raw text to a specialized assistant, which of the sequences and definitions are correct? Select all that apply.
+
+A) The creation of a base model involves pre-training via language modeling, where the core objective is simply to "predict the next token". 
+B) Supervised Fine-Tuning (SFT) adapts the base model to a specific set of instructions (e.g., formatting outputs as Q&A) utilizing completely unlabelled data. C) Preference Tuning is an alignment step performed after SFT, designed to improve the quality of the model and make it more personalized to the task. 
+D) Full Fine-Tuning (FFT) requires updating the entirety of the pre-trained weights, prompting the need for Parameter-Efficient Fine Tuning (PEFT) methods due to cost, slow training times, and very high storage requirements.
+
+
+Question 14: Advanced Prompt Engineering (Temperature and Top-P) When configuring an LLM's generation hyperparameters to dictate its behavior, which of the following accurately describes the mechanics of Temperature and Top-p (nucleus sampling)? Select all that apply.
+
+A) Setting the Temperature to 0 forces the model to continuously sample the highest likelihood tokens, completely removing randomness and yielding a deterministic, identical response every time. 
+B) Increasing the Temperature artificially flattens the probability distribution, making the selection of less probable tokens more likely and increasing the "creativity" of the output. 
+C) Top-p sampling controls the generation by restricting the LLM to only use a subset of tokens whose cumulative probability exceeds the value p. 
+D) For tasks like code generation or data extraction (e.g., classifying text into negative/positive), it is highly recommended to set both Temperature and Top-p to their maximum values to explore all edge cases.
+
+
+Question 15: In the SimCLR framework for contrastive learning, models are trained utilizing large batch sizes to provide sufficient negative examples without needing a memory bank. If a researcher trains a model using a specific minibatch of size N=8192, what is the exact number of negative samples generated and utilized in the denominator of the NT-Xent loss function for one single data point? - 16382
